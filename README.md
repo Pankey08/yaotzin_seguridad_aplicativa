@@ -7,3 +7,7 @@ cscript C:\Users\XMK8875\AppData\Local\Temp\run.vbs
 wmic service get name,pathname,startmode | findstr /i "auto" | findstr /i /v "c:\windows\\" | findstr /i /v """"
 
 wmic service get name,displayname,pathname,startmode | findstr /i /v "C:\Windows" 
+
+
+icacls "C:\Program Files\Citrix"
+icacls "C:\Program Files (x86)\Citrix"
